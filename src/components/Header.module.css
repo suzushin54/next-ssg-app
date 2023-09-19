@@ -1,0 +1,17 @@
+.headerContainer {
+    background: lightcyan;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+
+.headerLink {
+    color: black;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.headerLink:hover {
+    text-decoration: underline;
+}

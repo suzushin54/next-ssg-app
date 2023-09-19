@@ -1,0 +1,15 @@
+.pageContainer {
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid black;
+    padding: 10px;
+}
