@@ -10,6 +10,7 @@ interface CartContextType {
     cartItems: CartItem[];
     addToCart: (id: number) => void;
     getCartQuantity: () => number;
+    isClient: boolean;
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
@@ -19,6 +20,12 @@ interface CartProviderProps {
 }
 
 export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
+    // ComponentがMountされたときにClientSideであることを確認しないと、Hydration errorになるため判断する
+    const [isClient, setIsClient] = useState(false);
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
+
     const getInitialCartItems = (): CartItem[] => {
         if (typeof window !== 'undefined') {
             const storedCart = localStorage.getItem('cart');
@@ -52,7 +59,7 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
     };
 
     return (
-        <CartContext.Provider value={{ cartItems, addToCart, getCartQuantity }}>
+        <CartContext.Provider value={{ cartItems, addToCart, getCartQuantity, isClient }}>
             {children}
         </CartContext.Provider>
     );

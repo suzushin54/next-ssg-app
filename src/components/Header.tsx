@@ -10,8 +10,7 @@ interface User {
 }
 
 const Header: React.FC = () => {
-    const { getCartQuantity } = useCart();
-    const cartQuantity = getCartQuantity();
+    const { getCartQuantity, isClient } = useCart();
     const [user, setUser] = useState<User | null>(null);
 
     useEffect(() => {
@@ -38,8 +37,7 @@ const Header: React.FC = () => {
             <h1>Next.js SSG Example</h1>
             <div>
                 {user ? <span>こんにちは、{user.name} さん</span> : <span>Loading...</span>}
-                {/*<a href="/cart" style={{ marginLeft: '1rem' }}>Cart</a>*/}
-                <a href="/cart" style={{ marginLeft: '1rem' }}>Cart ({cartQuantity})</a>
+                <a href="/cart" style={{ marginLeft: '1rem' }}>Cart {isClient && `(${getCartQuantity()})`}</a>
             </div>
         </header>
     );
