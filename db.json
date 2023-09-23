@@ -1,0 +1,71 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Product A",
+      "price": 1000,
+      "size": "M",
+      "description": "This is a description for Product A."
+    },
+    {
+      "id": 2,
+      "name": "Product B",
+      "price": 2000,
+      "size": "L",
+      "description": "This is a description for Product B."
+    },
+    {
+      "id": 3,
+      "name": "Product C",
+      "price": 3000,
+      "size": "S",
+      "description": "This is a description for Product C."
+    },
+    {
+      "id": 4,
+      "name": "Product D",
+      "price": 4000,
+      "size": "M",
+      "description": "This is a description for Product D."
+    },
+    {
+      "id": 5,
+      "name": "Product E",
+      "price": 5000,
+      "size": "L",
+      "description": "This is a description for Product E."
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "prefecture": "Tokyo",
+      "membership": "Gold"
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "prefecture": "Osaka",
+      "membership": "Silver"
+    },
+    {
+      "id": 3,
+      "name": "Charlie",
+      "prefecture": "Kyoto",
+      "membership": "Bronze"
+    },
+    {
+      "id": 4,
+      "name": "David",
+      "prefecture": "Hokkaido",
+      "membership": "Gold"
+    },
+    {
+      "id": 5,
+      "name": "Eve",
+      "prefecture": "Fukuoka",
+      "membership": "Silver"
+    }
+  ]
+}
