@@ -8,6 +8,6 @@ RUN npm install -g pnpm
 
 RUN pnpm install
 
-COPY . .
+COPY . ./app
 
 CMD ["pnpm", "run", "dev"]
