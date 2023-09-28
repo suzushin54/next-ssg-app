@@ -1,4 +1,4 @@
-// pages/cart.tsx
+// _pages/cart.tsx
 import React, { useState, useEffect } from 'react';
 import styles from './TableStyles.module.css';
 import Layout from '../components/Layout';
