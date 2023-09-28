@@ -3,4 +3,9 @@
     background-color: #f0f0f0;
     color: black;
     padding: 1rem;
+    box-sizing: border-box;
+}
+
+.item {
+    margin-bottom: 1rem; /* 各項目の間隔を調整 */
 }

@@ -2,18 +2,11 @@ import type {GetStaticProps, NextPage} from 'next';
 import Layout from '../components/Layout';
 import styles from './TableStyles.module.css';
 import { useCart } from '@/contexts/CartContext';
+import { Product } from '@/types';
 
 interface CartItem {
     id: number;
     quantity: number;
-}
-
-interface Product {
-    id: number;
-    name: string;
-    price: number;
-    size: string;
-    description: string;
 }
 
 interface ProductsProps {
