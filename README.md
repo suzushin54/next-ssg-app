@@ -22,7 +22,7 @@ The app uses a mock API to retrieve product and user data.
 1. Clone the repository
 
    ```sh
-   $ git clone https://github.com/your-repository-url/next-ssg-csr-sample.git
+   $ git clone https://github.com/suzushin54/next-ssg-app.git
    $ cd next-ssg-csr-sample
    ```
 
